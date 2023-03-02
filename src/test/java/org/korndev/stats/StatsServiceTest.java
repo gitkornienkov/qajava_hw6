@@ -14,7 +14,7 @@ class StatsServiceTest {
         long actual = service.summaryCount(sales);
         long expected = 180;
 
-        Assertions.assertEquals(expected,actual);
+        Assertions.assertEquals(expected, actual);
     }
 
     @Test
@@ -45,12 +45,12 @@ class StatsServiceTest {
     }
 
     @Test
-   public void salesLowerAverage() {
+    public void salesLowerAverage() {
 
         int actual = service.salesLowerAverage(sales);
         int expected = 5;
 
-        Assertions.assertEquals(expected,actual);
+        Assertions.assertEquals(expected, actual);
     }
 
     @Test
@@ -58,5 +58,7 @@ class StatsServiceTest {
 
         int actual = service.salesHigherAverage(sales);
         int expected = 5;
+
+        Assertions.assertEquals(expected, actual);
     }
 }
